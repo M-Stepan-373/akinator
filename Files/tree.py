@@ -19,3 +19,10 @@ class Node:
         self.question = question
         self.left = nodes[-1]
         self.right = nodes[-2]
+
+    def definition(self):
+        if self.answer is None:
+            return True
+        else:
+            return False
+
