@@ -8,4 +8,4 @@ def guessing(answer: str) -> (bool, str, str):
     if input(answer + "?") == "да":
         return True, None, None
     else:
-        return False, input("Что ты загадал?"), input("Что отличает это от " + answer + "?")
+        return False, input("Что ты загадал?"), input("Чем" + answer + "отличается от вашего ответа?")
