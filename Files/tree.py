@@ -12,5 +12,11 @@ class Node:
         self.right = right
         self.answer = answer
 
-    def transformation(self, question: str, new_ansqwer: str):
+    def transformation(self, question: str, new_answer: str):
         pass
+
+    def definition(self):
+        if self.answer is None:
+            return True
+        else:
+            return False
