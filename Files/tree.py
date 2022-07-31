@@ -45,6 +45,6 @@ class Node:
 
     def definition(self):
         if self.answer is None:
-            return True
+            return True, self.question
         else:
-            return False
+            return False, self.answer
