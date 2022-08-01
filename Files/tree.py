@@ -13,9 +13,9 @@ class Node:
         self.answer = answer
 
     def transformation(self, question: str, new_answer: str, nodes: list):
-        nodes.append([Node('', None, None, new_answer)])
-        nodes.append([Node('', None, None, self.answer)])
-        self.answer = ''
+        nodes.append(Node('', None, None, new_answer))
+        nodes.append(Node('', None, None, self.answer))
+        self.answer = None
         self.question = question
         self.left = nodes[-1]
         self.right = nodes[-2]
