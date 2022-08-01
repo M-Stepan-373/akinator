@@ -38,9 +38,9 @@ class Node:
     nodes это база данных всех вопросов и ответов
     """
     def transformation(self, question: str, new_answer: str, nodes: list):
-        nodes.append([Node(len(nodes), '', None, None, new_answer)])
-        nodes.append([Node(len(nodes), '', None, None, self.answer)])
-        self.answer = ''
+        nodes.append(Node(len(nodes), '', None, None, new_answer))
+        nodes.append(Node(len(nodes), '', None, None, self.answer))
+        self.answer = None
         self.question = question
         self.left = nodes[-1]
         self.right = nodes[-2]

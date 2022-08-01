@@ -1,5 +1,5 @@
-def question(question: str) -> bool:
-    if input(question + "?") == "да":
+def question(text: str) -> bool:
+    if input(text + "?") == "да":
         return True
     else:
         return False

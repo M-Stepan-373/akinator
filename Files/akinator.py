@@ -7,8 +7,8 @@ class Akinator():
     
     answer - это ответ пользователя
     """
-    def turn(self, answer: bool):
-        if answer == True:
+    def Turn(self, answer: bool):
+        if answer:
             self.turn = self.turn.right
         else:
             self.turn = self.turn.left
