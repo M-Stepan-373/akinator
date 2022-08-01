@@ -18,13 +18,15 @@ class Node:
     left: Optional["Node"]
     right: Optional["Node"]
     answer: Optional[str]
+    number: Optional[int]
 
-    def __init__(self, question: Optional[str], left: Optional["Node"], right: Optional['Node'], answer: Optional[str]):
+    def __init__(self, number: Optional[int], question: Optional[str], left: Optional["Node"],
+                 right: Optional['Node'], answer: Optional[str]):
         self.question = question
         self.left = left
         self.right = right
         self.answer = answer
-
+        self.number = number
     """
     Если Акинатор угадал неправильно,
     записывает в массив базы данных новый вопрос и ответ на него.
@@ -36,13 +38,15 @@ class Node:
     nodes это база данных всех вопросов и ответов
     """
     def transformation(self, question: str, new_answer: str, nodes: list):
-        nodes.append([Node('', None, None, new_answer)])
-        nodes.append([Node('', None, None, self.answer)])
+        nodes.append([Node(len(nodes), '', None, None, new_answer)])
+        nodes.append([Node(len(nodes), '', None, None, self.answer)])
         self.answer = ''
         self.question = question
         self.left = nodes[-1]
         self.right = nodes[-2]
-
+    """
+    defenition проверяет является ли объект Node вопросом или конечным ответом
+    """
     def definition(self):
         if self.answer is None:
             return True, self.question
