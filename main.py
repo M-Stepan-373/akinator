@@ -2,7 +2,7 @@ from akinator.Files.tree import Node
 from akinator.Files.akinator import Akinator
 from akinator.Files.shell import question, guessing
 
-nodes = [Node(None, None, None, "Кот")]
+nodes = [Node(0, '', None, None, "Кот")]
 nodes[0].transformation("Оно лает", "Собака", nodes)
 
 while True:
