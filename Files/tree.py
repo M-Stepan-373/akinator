@@ -29,25 +29,26 @@ class Node:
 
     def transformation(self, question: str, new_answer: str, nodes: list):
         """
-            Если Акинатор угадал неправильно,
-            записывает в массив базы данных новый вопрос и ответ на него.
+        Если Акинатор угадал неправильно,
+        записывает в массив базы данных новый вопрос и ответ на него.
 
-            question это новый вопрос от пользователя
+        question это новый вопрос от пользователя
 
-            new_answer это новый персонаж(ответ ДА на вопрос параметра question)
+        new_answer это новый персонаж(ответ ДА на вопрос параметра question)
 
-            nodes это база данных всех вопросов и ответов
-            """
+        nodes это база данных всех вопросов и ответов
+        """
         nodes.append(Node(len(nodes), '', None, None, new_answer))
         nodes.append(Node(len(nodes), '', None, None, self.answer))
         self.answer = None
         self.question = question
         self.left = nodes[-1]
         self.right = nodes[-2]
-    """
-    defenition проверяет является ли объект Node вопросом или конечным ответом
-    """
-    def definition(self):
+
+    def check_leaf(self):
+        """
+        check_leaf проверяет является ли объект класса Node вопросом или конечным ответом
+        """
         if self.answer is None:
             return True, self.question
         else:
