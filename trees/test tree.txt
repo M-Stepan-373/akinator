@@ -1,14 +1,6 @@
-question
-Оно лает?
-question
-Оно умещается на руке?
-question
-Это кошка?
-answer
-Белка.
-answer
-Собака.
-answer
-Кошка.
-answer
-Волк.
+1
+2
+0
+0
+0
+0
