@@ -13,7 +13,6 @@ def guessing(answer: str) -> (bool, str, str):
 
 
 def is_yes(text):
-    answer = ""
     while True:
         answer = input(text + "\n").lower()
         if answer == "да":

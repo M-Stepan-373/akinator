@@ -2,17 +2,17 @@ from akinator.Files.akinator import Akinator
 from akinator.Files.shell import question, guessing, is_yes
 from akinator.Files.base import import_data, export_data
 
-print("Привет, " + input("Как тебя зовут?\n") + ". Я Акинатор, я хочу угадать твоих персонажей, отвечай на вопросы да или нет.")
-
+print("Привет, " + input("Как тебя зовут?\n") +
+      ". Я Акинатор, я хочу угадать твоих персонажей, отвечай на вопросы да или нет.")
 
 nodes = import_data('trees/test tree.txt', 'trees/test tree connects.txt')
 while True:
     akinator = Akinator(nodes[0])
     while True:
-        node_type, text = akinator.turn.definition()
+        node_type, text = akinator.turn.check_leaf()
         if node_type:
             a = question(text)
-            akinator.Turn(a)
+            akinator.go_node(a)
         else:
             yes, new_answer, new_question = guessing(text)
             if not yes:
