@@ -1,5 +1,5 @@
 from akinator.Files.akinator import Akinator
-from akinator.Files.shell import question, guessing
+from akinator.Files.shell import question, guessing, is_yes
 from akinator.Files.base import import_data, export_data
 
 print("Привет, " + input("Как тебя зовут?\n") + ". Я Акинатор, я хочу угадать твоих персонажей, отвечай на вопросы да или нет.")
@@ -19,7 +19,7 @@ while True:
             if not yes:
                 akinator.turn.transformation(new_question, new_answer, nodes)
             break
-    if input("Хотите ли вы выйти?\n") == "да":
+    if is_yes("Хотите ли вы выйти?"):
         break
-if input("Хотите ли вы сохранить?\n") == "да":
-    export_data('trees/test tree connects.txt', 'trees/test tree.txt', nodes)
+if is_yes("Хотите ли вы сохранить?"):
+    export_data('trees/test tree.txt', 'trees/test tree connects.txt', nodes)
