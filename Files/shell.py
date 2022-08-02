@@ -11,6 +11,7 @@ def guessing(answer: str) -> (bool, str, str):
     else:
         return False, input("Что ты загадал?\n"), input("Чем " + answer + " отличается от вашего ответа?\n")
 
+
 def is_yes(text):
     answer = ""
     while True:
