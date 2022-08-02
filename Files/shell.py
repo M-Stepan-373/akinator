@@ -4,6 +4,7 @@ def question(text: str) -> bool:
     else:
         return False
 
+
 def guessing(answer: str) -> (bool, str, str):
     if input(answer + "?\n") == "да":
         return True, None, None
