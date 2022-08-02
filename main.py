@@ -6,7 +6,6 @@ print("Привет, " + input("Как тебя зовут?\n") + ". Я Акин
 
 
 nodes = import_data('trees/test tree.txt', 'trees/test tree connects.txt')
-print(nodes)
 while True:
     akinator = Akinator(nodes[0])
     while True:
