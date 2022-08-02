@@ -1,10 +1,10 @@
-from akinator.Files.tree import Node
 from akinator.Files.akinator import Akinator
 from akinator.Files.shell import question, guessing
+from akinator.Files.base import import_data
 
-nodes = [Node(0, '', None, None, "Кот")]
-nodes[0].transformation("Оно лает", "Собака", nodes)
 
+nodes = import_data('trees/test tree.txt', 'trees/test tree connects.txt')
+print(nodes)
 while True:
     akinator = Akinator(nodes[0])
     while True:
