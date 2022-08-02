@@ -1,2 +1,6 @@
+question
+Оно лает
 answer
-Волк.
+Собака
+answer
+Кот
