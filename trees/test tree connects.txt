@@ -2,5 +2,13 @@ question
 Оно лает
 answer
 Собака
+question
+Оно запасливое
+answer
+хомяк
+question
+Оно рыжее
+answer
+лиса
 answer
 Кот
