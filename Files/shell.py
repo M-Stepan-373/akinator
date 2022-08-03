@@ -6,7 +6,7 @@ def question(text: str) -> bool:
 
 
 def guessing(answer: str) -> (bool, str, str):
-    if is_yes(answer + "?") == "да":
+    if is_yes(answer + "?") == True:
         return True, None, None
     else:
         return False, input("Что ты загадал?\n"), input("Чем " + answer + " отличается от вашего ответа?\n")
