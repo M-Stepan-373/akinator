@@ -1,7 +1,8 @@
 from akinator.Files.tree import Node
+from typing import List
 
 
-def import_data(file: str, file_connect: str):
+def import_data(file: str, file_connect: str) -> List[Node]:
     nodes = []
     f = open(file, 'r')
     strings = f.readlines()
@@ -21,33 +22,33 @@ def import_data(file: str, file_connect: str):
     return nodes
 
 
-def export_data(file: str, file_2: str, nodes):
-    f_1 = open(file, 'w')
-    f_2 = open(file_2, 'w')
+def export_data(file: str, file_connect: str, nodes: List[Node]):
+    File = open(file, 'w')
+    File_connect = open(file_connect, 'w')
     a, b = nodes[0].check_leaf()
     if a:
-        f_1.write("question\n")
+        File.write("question\n")
     else:
-        f_1.write("answer\n")
-    f_1.write(b + '\n')
+        File.write("answer\n")
+    File.write(b + '\n')
     for i in nodes:
         a, b = i.check_leaf()
         if a:
-            f_2.write(str(i.left.number) + '\n')
+            File_connect.write(str(i.left.number) + '\n')
             a, b = i.left.check_leaf()
             if a:
-                f_1.write("question\n")
+                File.write("question\n")
             else:
-                f_1.write("answer\n")
-            f_1.write(b + '\n')
-            f_2.write(str(i.right.number) + '\n')
+                File.write("answer\n")
+            File.write(b + '\n')
+            File_connect.write(str(i.right.number) + '\n')
             a, b = i.right.check_leaf()
             if a:
-                f_1.write("question\n")
+                File.write("question\n")
             else:
-                f_1.write("answer\n")
-            f_1.write(b + '\n')
+                File.write("answer\n")
+            File.write(b + '\n')
         else:
-            f_2.write('0\n0\n')
-    f_2.close()
-    f_1.close()
+            File_connect.write('0\n0\n')
+    File_connect.close()
+    File.close()
