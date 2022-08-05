@@ -9,7 +9,8 @@ def guessing(answer: str) -> (bool, str, str):
     if is_yes(answer + "?") == True:
         return True, None, None
     else:
-        return False, input("Кого/что ты загадал?\n"), input("Чем " + answer + " отличается от вашего ответа?\n")
+        old_answer = input("Кого/что ты загадал?\n")
+        return False, old_answer, input("Что верно про " + old_answer + ", но неверно про " + answer + "?\n")
 
 
 def is_yes(text):
@@ -19,5 +20,5 @@ def is_yes(text):
             return True
         if answer == "нет":
             return False
-        print("Пожалуйста, говорите да или нет.")
+        print("Пожалуйста, отвечайте только да или нет на данный вопрос.")
 
