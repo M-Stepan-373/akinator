@@ -2,10 +2,10 @@ from akinator.Files.akinator import Akinator
 from akinator.Files.shell import question, guessing, is_yes
 from akinator.Files.base import import_data, export_data
 
-print("Привет, " + input("Как тебя зовут?\n") +
-      ". Я Акинатор, я хочу угадать твоих персонажей, отвечай на вопросы да или нет.")
-library = input("название базы данных:")
-nodes = import_data("trees/" + library + "_connects.txt", "trees/" + library + "_base.txt")
+print("Привет, Я Акинатор и я хочу угадать любой предмет или персонажа,"
+      " которого ты загадаешь. Отвечай на вопросы да или нет.")
+library = input("Введите название нужной вам базы данных:")
+nodes = import_data("trees/" + library + "_base.txt", "trees/" + library + "_connects.txt")
 while True:
     akinator = Akinator(nodes[0])
     while True:
@@ -21,4 +21,4 @@ while True:
     if is_yes("Хотите ли вы выйти?"):
         break
 if is_yes("Хотите ли вы сохранить?"):
-    export_data("trees/" + library + "_connects.txt", "trees/" + library + "_base.txt", nodes)
+    export_data("trees/" + library + "_base.txt", "trees/" + library + "_connects.txt", nodes)
