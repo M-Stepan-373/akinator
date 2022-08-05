@@ -9,7 +9,7 @@ def guessing(answer: str) -> (bool, str, str):
     if is_yes(answer + "?") == True:
         return True, None, None
     else:
-        old_answer = input("Кого/что ты загадал?\n")
+        old_answer = input("Кого или что ты загадал?\n")
         return False, old_answer, input("Что верно про " + old_answer + ", но неверно про " + answer + "?\n")
 
 
