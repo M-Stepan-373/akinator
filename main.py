@@ -1,11 +1,11 @@
 from akinator.Files.akinator import Akinator
-from akinator.Files.shell import question, guessing, is_yes
+from akinator.Files.shell import question, guessing
 from akinator.Files.base import import_data, export_data
 
 print("Привет, " + input("Как тебя зовут?\n") +
       ". Я Акинатор, я хочу угадать твоих персонажей, отвечай на вопросы да или нет.")
 library = input("название базы данных:")
-nodes = import_data("trees/" + library + "_connects.txt", "trees/" + library + "_base.txt")
+nodes = import_data("trees/" + library + "_base.txt", "trees/" + library + "_connects.txt")
 while True:
     akinator = Akinator(nodes[0])
     while True:
@@ -18,7 +18,20 @@ while True:
             if not yes:
                 akinator.turn.transformation(new_question, new_answer, nodes)
             break
-    if is_yes("Хотите ли вы выйти?"):
+    while True:
+        action = input("0 - перезапустить\n1 - сбросить последний шаг и перезапустить\n2 - выйти\n3 - сохранить и выйти\n")
+        if action == '0':
+            export_data("trees/" + library + "_base.txt", "trees/" + library + "_connects.txt", nodes)
+            break
+        if action == '1':
+            nodes = import_data("trees/" + library + "_base.txt", "trees/" + library + "_connects.txt")
+            break
+        if action == '2':
+            break
+        if action == '3':
+            export_data("trees/" + library + "_base.txt", "trees/" + library + "_connects.txt", nodes)
+            break
+
+    # Это условие нужно чтобы выйти из основного цикла
+    if action == '2' or action == '3':
         break
-if is_yes("Хотите ли вы сохранить?"):
-    export_data("trees/" + library + "_connects.txt", "trees/" + library + "_base.txt", nodes)
