@@ -1,6 +1,0 @@
-question
-Оно лает
-answer
-Собака
-answer
-Кот

@@ -1,0 +1,246 @@
+question
+Оно живое
+question
+Оно съедобное
+question
+Оно покрыто шерстью
+question
+Оно из мяса
+question
+Это растение
+question
+Это кондитерское изделие
+question
+В его состав входит картошка
+question
+Это едят на праздники
+question
+Это ягода
+question
+Она красная
+question
+Оно имеет скорлупу
+question
+Она ядовитая
+answer
+Черника
+answer
+Котлета
+question
+Это морепродукт
+question
+Это крупа
+answer
+Яйцо
+question
+Она желтая
+question
+Это фрукт
+answer
+Пшенка
+question
+Она коричневая
+question
+Они готовятся из краба
+question
+Это завёрнуто в лаваш
+answer
+Торт
+question
+Их готовят на маслиницу
+answer
+Гречка
+answer
+Рис
+question
+Он желтый
+question
+Это овощ
+answer
+Банан
+question
+Он оранжевый
+answer
+Крабовые палочки
+answer
+Рыба
+answer
+Волчья ягода
+answer
+Клюква
+answer
+Блины
+answer
+Вафля
+question
+Он красный
+question
+Оно используется для восполнения жажды
+answer
+Помидор
+answer
+Огурец
+answer
+Апельсин
+answer
+Яблоко
+question
+Оно летает
+question
+Оно травоядное
+question
+Оно длинношеее
+question
+Оно всегда рыжее
+question
+Оно декоративное
+question
+Оно создано человеком
+answer
+Цветок
+question
+Оно жжётся при прикосновении
+question
+Оно работает на электро энергии
+answer
+Камень
+question
+Это насекомое
+question
+Оно позвоночное
+question
+Оно кусается
+answer
+Птица
+answer
+Комар
+question
+Оно делает мед
+answer
+Пчела
+answer
+Бабочка
+question
+Оно может производить математическиие вычисления
+question
+Оно отражает все вокруг
+question
+Это поисковик всего на свете
+question
+Это видео игра
+answer
+Зеркало
+question
+Оно хранит запечетленный на нем момент времени и место
+answer
+Вода
+answer
+Макароны
+answer
+Крапива
+question
+Из него готовят масло
+answer
+Фотография
+question
+С его помощью переносят вещи
+answer
+Кровать
+answer
+Бумага
+answer
+Жираф
+question
+Оно имеет ветвистые рога на голове
+question
+Это игра для телефнов
+question
+Это распределяет энергию
+answer
+Brawl Stars
+answer
+minecraft
+answer
+Браузер Google Chrome
+answer
+Калькулятор
+question
+Оно бывает разных цветов
+question
+Оно живет под водой
+question
+Оно членистоногое
+question
+Оно ходит на четырех лапах
+answer
+Краб
+answer
+Рыба
+answer
+Лиса
+question
+Оно лижет лапу
+answer
+Носорог
+question
+Оно очень быстрое
+answer
+Олень/Лось
+question
+Оно дает молоко
+question
+Бывает горным
+answer
+Мышь
+answer
+Коза
+answer
+Корова
+answer
+Рюкзак
+question
+Это здание
+answer
+Небоскрёб
+answer
+Бумага
+question
+Это мексеканская еда
+answer
+Сосиска
+answer
+Буррито
+answer
+Шаурма
+answer
+Флеш
+question
+Оно всегда желтое
+answer
+Медведь
+question
+Оно уходит в спячку зимой
+answer
+Удлинитель
+answer
+Фонарь
+answer
+Подсолнух
+answer
+Дерево
+answer
+Медведь
+question
+Оно рычит
+answer
+Цыпленок
+answer
+Человек
+answer
+Гусеница
+answer
+Улитка
+answer
+Лев
+answer
+Кот
