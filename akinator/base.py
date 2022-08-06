@@ -1,4 +1,4 @@
-from akinator.Files.tree import Node
+from .tree import Node
 from typing import List
 
 

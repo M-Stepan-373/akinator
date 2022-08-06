@@ -1,6 +1,6 @@
-from akinator.Files.akinator import Akinator
-from akinator.Files.shell import question, guessing
-from akinator.Files.base import import_data, export_data
+from akinator.akinator import Akinator
+from akinator.shell import question, guessing
+from akinator.base import import_data, export_data
 
 
 print("Привет, Я Акинатор и я хочу угадать любой предмет или персонажа,"
