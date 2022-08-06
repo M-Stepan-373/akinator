@@ -3,8 +3,8 @@ from akinator.Files.shell import question, guessing
 from akinator.Files.base import import_data, export_data
 
 
-print("Привет, Я Акинатор и я хочу угадать любой предмет или персонажа,"
-      " которого ты загадаешь. Отвечай на вопросы да или нет.")
+print("Привет, Я Акинатор и я хочу угадать любой предмет или персонажа,")
+print("которого ты загадаешь. Отвечай на вопросы да или нет.")
 library = input("Введите название нужной вам базы данных:")
 
 nodes = import_data("trees/" + library + "_base.txt", "trees/" + library + "_connects.txt")
@@ -22,7 +22,8 @@ while True:
                 akinator.turn.transformation(new_question, new_answer, nodes)
             break
     while True:
-        action = input("0 - перезапустить\n1 - сбросить последний шаг и перезапустить\n2 - выйти\n3 - сохранить и выйти\n")
+        action = input("0 - перезапустить\n1 - сбросить последний шаг и перезапустить\n2"
+                       " - выйти без сохранения\n3 - выйти с сохранением\n")
         if action == '0':
             export_data("trees/" + library + "_base.txt", "trees/" + library + "_connects.txt", nodes)
             break
